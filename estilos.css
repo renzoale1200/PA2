@@ -1,0 +1,239 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*CSS de pagina de inicio*/
+body{
+    margin: 0;
+    padding: 0;
+}
+#contenidoinicio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(imagenes/futbol1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#titulo h1{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+}
+#titulo h1:hover{
+    color: gray;
+}
+.descripcion p{
+    color: white;
+    font-weight: bold;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;        
+}
+#menu li a:hover{
+    color: gray;
+}
+#menu li{  
+    list-style-type: none;   
+    min-width: 120px;
+}
+#menu li a{
+    font-size: 25px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+#redes{
+    font-size: 20px;
+}
+#redes a{
+    color: whitesmoke;
+}
+#redes a:hover{
+    color: gray;
+}
+/*CSS de pagina de blog*/
+#contenedorblog{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tituloblog{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    background-color: white;
+}
+#tituloblog h1{
+    text-align: center;
+}
+#tituloblog h1:hover{
+    color: gray;
+}
+#redesblog{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#redesblog a{
+    font-size: 25px;
+    color: black;
+    align-items: center;
+}
+#menublog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;        
+}
+#menublog li a:hover{
+    color: gray;
+}
+#menublog li{  
+    list-style-type: none;   
+    min-width: 120px;
+}
+#menublog li a{
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+#menublog li a.activo{
+    border-bottom: 2px solid red;
+}
+#menublog i{
+    font-size: 20px;
+}
+#contenidoblog{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contenidoblog .fotofutbol{
+    width: 50%;
+    height: 50%;
+}
+#contenidoblog p{
+    width: 50%;
+    text-align: left;
+}
+.foto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    min-height: 90px;
+}
+.foto h2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 28px;
+    white-space: nowrap;
+}
+.foto .autor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+.foto .autor img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.foto .autor p{
+    width: 150px;
+    margin: 5px 0 0;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+.foto .autor p span{
+    display: block;
+}
+.fotopsg{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 25px;
+    width: 50%;
+}
+.fotopsg img{
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.fotopsg p{
+    flex: 1;
+    margin: 0;
+    text-align: justify;
+}
+/*CSS de pagina de la galeria*/
+#contenidogaleria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.galeriafotos{
+    display: flex;
+    flex-direction: column;
+}
+.galeriafotos img{
+    width: 275px;
+    height: 185px;
+    margin: 15px;
+    box-shadow: 7px 5px 9px black;
+    opacity: 70%;
+}
+.galeriafotos h3{
+    color: lightslategray;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+.galeriafotos img:hover{
+    opacity: 100%;
+}
+/*CSS de la pagina de videos*/
+#titulovideos{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+#video-responsive iframe{
+    width: 500px;
+    height: 300px;
+    box-shadow: 7px 5px 9px black;
+    border: 2px solid gray;
+}
+.descripcioncl{
+    width: 32%;
+    margin: 20px auto;
+}
+#video-responsive2{
+    width: 440px;
+    height: 250px;
+    border:1px solid grey;
+    position:relative;
+}
